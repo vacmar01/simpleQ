@@ -26,7 +26,7 @@ func main() {
 		return
 	}
 
-	// Check if the script exists
+	// Check if the queue exists
 	if _, err := os.Stat(queue); os.IsNotExist(err) {
 		fmt.Println("Queue file does not exist")
 		return
